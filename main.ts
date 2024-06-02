@@ -11,9 +11,10 @@ basic.showLeds(`
 . # . . .
 `)
 
+let stripHead = neopixel.create(DigitalPin.P0, 9, NeoPixelMode.RGB)
 let strip = neopixel.create(DigitalPin.P16, 9, NeoPixelMode.RGB)
-strip.setPixelColor(0, neopixel.colors(neopixel.hsl(0, 99, 50,)))
 strip.showColor(neopixel.rgb(255, 0, 0))
+stripHead.showColor(neopixel.rgb(255, 0, 0))
 strip.show()
 
 // basic.forever(function () {
